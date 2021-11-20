@@ -1,0 +1,29 @@
+body {
+    font-size: 25px;
+    background-image: url('');
+    font-family: ;
+    
+}
+
+ .input{
+     text-align:center;
+     padding:150px;
+
+}
+
+label{
+    text-align:left;
+    width: 150px;
+    display: inline-block;
+    font-style:italic;
+
+}
+
+.form-a{
+    border-radius:2px;
+    
+}
+.Validation{
+    box-shadow: 5px 0px 0px black;
+    border-radius 
+}
