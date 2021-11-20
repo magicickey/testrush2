@@ -27,4 +27,14 @@ label{
     border-radius:2px;
     
 }
-.drop
+.drop_zone{
+border: 3px solid rgba(88, 17, 34, 0.191)
+border-style:dotted;
+border-radius:1px;
+    height:200px;
+    margin-left:37%
+}
+p {
+    text-align:center;
+    margin-top:19%;
+}
