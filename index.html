@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>Mon interface web</title>
     <link rel="stylesheet" href="style.css" href="dragdrop.js">
-    <br>
-    <label for="archive">Nom du fichier d'archive:</label>
-    <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
-</div>
-    <br>
     <script>
         function dragstart_handler(ev) {
          // On ajoute l'identifiant de l'élément cible à l'objet de transfert
@@ -16,10 +11,15 @@
         }
         </script>
         
-        <p id="p1" draggable="true" ondragstart="dragstart_handler(event)">Cet élément est déplaçable.</p>
+        <p id="p1" draggable="true" ondragstart="dragstart_handler(event)"></p>
 </head>
 <body>
     <h1>Mon interface Web </h1>
+      <br>
+    <label for="archive">Nom du fichier d'archive:</label>
+    <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
+</div>
+    <br>
 <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
         <p>
                 Formulaire d'envoi de fichier :<br />
