@@ -4,40 +4,34 @@
     <meta charset="UTF-8">
     <title>Mon interface web</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function dragstart_handler(ev) {
+         // On ajoute l'identifiant de l'élément cible à l'objet de transfert
+         ev.dataTransfer.setData("text/plain", ev.target.innerText);
+        }
+        </script>
+        
+        <p id="p1" draggable="true" ondragstart="dragstart_handler(event)">Cet élément est déplaçable.</p>
 </head>
-<body><h1>Mon interface Web </h1>
+<body>
+    <h1>Mon interface Web </h1>
+<form action="cible_envoi.php" method="post" enctype="multipart/form-data">
+        <p>
+                Formulaire d'envoi de fichier :<br />
+                <input type="file" name="monfichier" /><br />
+                <input type="submit" value="Envoyer le fichier" />
+        </p>
+</form>
+        <label for="archive">Nom du fichier d'archive:</label>
+        <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
+    </div>
+   
+
+    <input type="hidden" id="tokken" name="tokken" value="My first web site">
+    <div class=Validation>
+        <input type="submit" value="Validation">
+    </div>
+</form>
+
 </body>
-<br><label for="archive">Nom de votre archive:</label>
-initElement: function (element) {
-    if (typeof element == 'string')
-        element = document.getElementById(element);
-    element.onmousedown = dragDrop.startDragMouse;
-    element.innerHTML += dragDrop.keyHTML;
-    var links = element.getElementsByTagName('a');
-    var lastLink = links[links.length-1];
-    lastLink.relatedElement = element;
-    lastLink.onclick = dragDrop.startDragKeys;
-},startDrag: function (obj) {
-    if (dragDrop.draggedObject)
-        dragDrop.releaseElement();
-    dragDrop.startX = obj.offsetLeft;
-    dragDrop.startY = obj.offsetTop;
-    dragDrop.draggedObject = obj;
-    obj.className += ' dragged';
-},
-setPosition: function (dx,dy) {
-    dragDrop.draggedObject.style.left = dragDrop.startX + dx + 'px';
-    dragDrop.draggedObject.style.top = dragDrop.startY + dy + 'px';
-},
-releaseElement: function() {
-    removeEventSimple(document,'mousemove',dragDrop.dragMouse);
-    removeEventSimple(document,'mouseup',dragDrop.releaseElement);
-    removeEventSimple(document,'keypress',dragDrop.dragKeys);
-    removeEventSimple(document,'keypress',dragDrop.switchKeyEvents);
-    removeEventSimple(document,'keydown',dragDrop.dragKeys);
-    dragDrop.draggedObject.className = dragDrop.draggedObject.className.replace(/dragged/,'');
-    dragDrop.draggedObject = null;
-}
-<input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
-</div>
 </html>
