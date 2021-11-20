@@ -22,6 +22,18 @@
                 <input type="submit" value="Envoyer le fichier" />
         </p>
 </form>
+<form action="fichier tar" method="post" enctype="multipart/form-data"></form>
+        <p>
+                Générer un fichier Tar:<br/>
+                <input type="file" name="monfichier"/><br />
+                <input type="submit" value="Envoyer le fichier"/>
+        </p>
+<form action="Télécharger l'archive" method="post" enctype="multipart/form-data"></form>
+        <p>
+                Télécharger l'archive:<br/>
+                <input type="file" name="monfichier"/><br />
+                <input type="filename" value="download"/><br />
+        </p>
         <label for="archive">Nom du fichier d'archive:</label>
         <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
     </div>
