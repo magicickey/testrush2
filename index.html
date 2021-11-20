@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Mon interface web</title>
     <link rel="stylesheet" href="style.css" href="dragdrop.js">
+    <br>
+    <label for="archive">Nom du fichier d'archive:</label>
+    <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
+</div>
+    <br>
     <script>
         function dragstart_handler(ev) {
          // On ajoute l'identifiant de l'élément cible à l'objet de transfert
@@ -34,12 +39,9 @@
                 <input type="file" name="monfichier"/><br />
                 <input type="filename" value="download"/><br />
         </p>
-        <label for="archive">Nom du fichier d'archive:</label>
-        <input type="text" id="name" required minlength="2" maxlength="8" size ="8" placeholder="archive name">
-    </div>
    
 
-    <input type="hidden" id="tokken" name="tokken" value="My first web site">
+    <input type="hidden" id="tokken" name="tokken" value="Mon interface web">
     <div class=Validation>
         <input type="submit" value="Validation">
     </div>
