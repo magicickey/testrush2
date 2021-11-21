@@ -25,7 +25,7 @@ input {
     font-weight: 800;
     font-style: italic;
     color: rgb(4, 21, 34);
-    margin-left:center;
+    margin-left:5%;
 }
 
 .drop_zone {
@@ -39,7 +39,7 @@ input {
 
 p {
     text-align: center;
-    margin-top: 21%;
+    margin-top: 5%;
     color: rgb(44, 68, 78);
 } 
 
