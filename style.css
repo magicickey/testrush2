@@ -1,3 +1,7 @@
+h1{
+display:center;
+}
+
 body {
     background-image: url("");
 }
@@ -6,7 +10,7 @@ body {
     background-color: rgba(55, 72, 129, 0.76);
     margin: 5% auto;
     width: 35%;
-    height: 500px;
+    height: auto;
 }
 
 .name {
@@ -15,7 +19,7 @@ body {
     font-size: 30px;
     color: rgb(66, 146, 146);
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 input {
