@@ -6,3 +6,12 @@
     height: 200px;
     margin-left:center;
 }
+input {
+    border-color: rgba(15, 71, 116, 0.788);
+    font-family: sans -serif, sans-serif;
+    font-size: 18px;
+    font-weight: 11px;
+    font-style: italic;
+    color: rgb(4, 21, 34);
+    margin-left:center;
+}
