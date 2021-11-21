@@ -45,4 +45,5 @@ p {
 
 .label {
     align-items:center;
+    display: flex-block;
 }
