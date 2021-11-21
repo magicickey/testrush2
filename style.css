@@ -1,86 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
-    background-color:rgba(0,0,0, 0.19)
-    background-image: url('');
-    font-family: 'Bebas Neue', cursive;
-     color:#b983e9;
-    
+    background-image: url("");
 }
 
- .input{
-     text-align:center;
-     border-color: rgba(111,64,12,0878);
-     color:#b983e9;
-     font-family:'Bebas Neue', cursive;
-     font-size:19px;
-     font-weight:700;
-     font-style:italic;
-     color:rgb(2,16, 33);
-     margin-left:35%
-
+#fond {
+    background-color: rgba(55, 72, 129, 0.76);
+    margin: 5% auto;
+    width: 35%;
+    height: 500px;
 }
 
-label{
-    text-align:left;
-    width: 150px;
-    display: inline-block;
-    font-style:italic;
-
+.name {
+    font-family:'Bebas Neue', cursive; ;
+    font-weight: 12;
+    font-size: 30px;
+    color: rgb(66, 146, 146);
+    text-align: center;
+    margin-top: 10%;
 }
 
-.form-a{
-    border-radius:2px;
-    
+input {
+    border-color: rgba(15, 71, 116, 0.788);
+    font-family: Arial Narrow, sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(4, 21, 34);
+    margin-left: 35%;
 }
-.drop_zone{
-border: 3px solid rgba(88, 17, 34, 0.191)
-border-style:dotted;
-border-radius:1px;
-    height:200px;
-    margin-left:37%
+
+.drop_zone {
+    border: 3px solid rgba(23, 90, 73, 0.767);
+    border-style: dotted;
+    border-radius: 1px;
+    width: 200px;
+    height: 100px;
+    margin-left: 19%;
 }
+
 p {
-    text-align:center;
-    margin-top:19%;
+    text-align: center;
+    margin-top: 21%;
+    color: rgb(44, 68, 78);
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-body {
-    font-size: 25px;
-    background-image: url('');
-    font-family: 'Bebas Neue', cursive;
-     color:#b983e9;
-    
-}
-
- .input{
-     text-align:center;
-     padding:150px;
-     color:#b983e9;
-
-}
-
-label{
-    text-align:left;
-    width: 150px;
-    display: inline-block;
-    font-style:italic;
-
-}
-
-.form-a{
-    border-radius:2px;
-    
-}
-.drop_zone{
-border: 3px solid rgba(88, 17, 34, 0.191)
-border-style:dotted;
-border-radius:1px;
-    height:200px;
-    margin-left:20%;
-}
-p {
-    text-align:center;
-    margin-top:19%;
-}
+   
