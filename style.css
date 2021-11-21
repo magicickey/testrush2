@@ -1,1 +1,8 @@
-
+.drop_zone {
+    border: 3px solid rgba(23, 90, 73, 0.767);
+    border-style: dotted;
+    border-radius: 1px;
+    width: 400px;
+    height: 200px;
+    margin-left:center;
+}
