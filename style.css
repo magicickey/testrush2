@@ -48,6 +48,6 @@ p {
 } 
 
 .label {
-    align-items:center;
+    align-items:justify;
     display: flex-block;
 }
